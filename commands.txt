@@ -1,0 +1,7 @@
+sudo apt install ufw -y
+sudo ufw enable
+sudo ufw status numbered
+sudo ufw deny 23/tcp
+nc -vz localhost 23
+sudo ufw allow 22/tcp
+sudo ufw delete 3
